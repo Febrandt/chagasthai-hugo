@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    {{ partial "header.html" . }}
+
+    <main>
+        {{ .Content }}
+    </main>
+
+    {{ partial "footer.html" .}}
+</body>
+
+<style>
+    * {
+        margin:0;
+        -webkit-tap-highlight-color: transparent;
+
+    }
+    body, html{
+        color-scheme: light dark;
+        color: white;
+        width: 100%;
+    }
+   
+    main { 
+        font-family: "Roboto";
+        position: relative;
+        padding-top: 3rem;
+        width: 100%;
+    } 
+
+    p {
+        color: lightgray;
+    }
+    h1, h2, h3, h4, h5, h6, a {
+        color: white;
+    }
+</style>
+</html>
